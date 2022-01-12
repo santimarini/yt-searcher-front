@@ -36,6 +36,7 @@ const Search = (props: ISearch) => {
             props.setVideoLoading();
             props.searchVideo(userQuery, '')
         }
+        // eslint-disable-next-line
     }, [userQuery])
 
     return <ResultList callBack={callBack} isLoading={props.isLoading} videos={videos} searchText={getParamValue(props.location, 'search')} />
